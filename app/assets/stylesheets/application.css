@@ -14,7 +14,18 @@
  *= require_self
  */
 
-* {
-    font-family: Helvetica;
+html {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    font-family: arial, sans-serif;
     color: blueviolet;
+    text-align: center;
+    font-size: 40px;
+}
+
+table {
+    margin: 20px;
 }
