@@ -10,22 +10,7 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
 
-html {
-    font-family: sans-serif;
-    margin: 20px;
-}
 
-h1 {
-    font-family: arial, sans-serif;
-    color: blueviolet;
-    text-align: center;
-    font-size: 40px;
-}
-
-table {
-    margin: 20px;
-}
+@import 'bootstrap';
