@@ -14,6 +14,12 @@
 
 
 @import 'bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Stalemate');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+
+* {
+  font-family: 'Josefin Slab', serif;
+}
 
 .jumbotron {
   /* The image used */
@@ -26,6 +32,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.jumbotron h1 {
+  font-family: 'Stalemate', cursive;
+  font-size: 80px;
 }
 
 //body {
