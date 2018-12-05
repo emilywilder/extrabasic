@@ -65,3 +65,4 @@ gem 'pry-rails', :group => :development
 
 gem 'bootstrap'
 gem 'jquery-rails'
+gem 'font-awesome-sass'
