@@ -13,7 +13,7 @@
     <tr>
       <th scope="col">Title</th>
       <th scope="col">Text</th>
-      <th scope="col">Actions</th>
+      <th scope="col" class="text-center">Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -21,7 +21,7 @@
       <tr>
         <td><%= link_to article.title, article_path(article) %></td>
         <td><%= article.text %></td>
-        <td>
+        <td class="text-center">
           <a href=<%= edit_article_path(article) %> role="button">
             <i class="far fa-edit"></i>
           </a>
@@ -30,7 +30,6 @@
           <% end %>
         </td>
       </tr>
-
     <% end %>
   </tbody>
 </table>
