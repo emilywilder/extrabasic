@@ -8,8 +8,6 @@
     <%= form.label :body, class: "control-label" %><br/>
     <%= form.text_area :body, class: "form-control", placeholder: 'Comment' %>
   </div>
-  <p>
-    <%= form.submit %>
-  </p>
+  <%= form.submit 'Submit', class: 'btn btn-primary' %>
 <% end %>
 
