@@ -1,4 +1,16 @@
-<h1>Edit article</h1>
-<%= render 'form' %>
+<div class="container">
+  <div class="row h-100">
+    <div class="col-auto mr-auto my-auto">
+      <h1 class="display-5">Edit article</h1>
+    </div>
+    <div class="col-auto my-auto">
+      <a class="btn" href=<%= articles_path %> role="button">
+        <i class="far fa-arrow-alt-circle-left"></i> Back
+      </a>
+    </div>
+  </div>
+</div>
+<div class="container mb-4">
+  <%= render 'form' %>
+</div>
 
-<%= link_to 'Back', articles_path %>
