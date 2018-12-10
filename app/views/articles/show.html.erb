@@ -4,7 +4,7 @@
       <h1 class="display-5"><%= @article.title %></h1>
     </div>
     <div class="col-auto my-auto">
-      <a class="btn" href=<%= edit_article_path %> role="button">
+      <a class="btn" href=<%= edit_article_path(@article) %> role="button">
         <i class="far fa-edit"></i> Edit
       </a>
       <a class="btn" href=<%= articles_path %> role="button">
@@ -19,7 +19,8 @@
 <div class="container mb-4">
   <h2>Comments:</h2>
   <div class="card-columns">
-    <%= render @article.comments %>
+    <!--    Don't show empty comments -->
+    <%= render @article.comments.reject { |x| x.id == nil } %>
   </div>
   <div class="container mt-3">
     <h3>Add a comment:</h3>
