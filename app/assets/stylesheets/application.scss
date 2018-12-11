@@ -60,3 +60,18 @@
   font-size: 100%;
   //font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
 }
+
+.parsley-error {
+  background-color: unset !important;
+  @extend .is-invalid;
+}
+
+.parsley-success {
+  background-color: unset !important;
+  @extend .is-valid;
+}
+
+.parsley-errors-list {
+  margin-top: 0.5em;
+  color: red;
+}
