@@ -1,5 +1,21 @@
-<%= bootstrap_form_with model: @article, local: true do |form| %>
-  <%= form.text_field :title, placeholder: 'Enter title' %>
-  <%= form.text_area :text, placeholder: 'Content', size: '60x10' %>
+<%= form_with(model: @article, local: true,
+              html: { "data-parsley-validate": true }) do |form| %>
+  <div class="form-group">
+    <%= form.label :title, class: "control-label" %><br/>
+    <%= form.text_field :title, class: "form-control", placeholder: 'Give your article a title',
+                        'data-parsley-required': true, 'data-parsley-minlength': '5',
+                        'data-parsley-trigger': 'blur'
+    %>
+  </div>
+  <div class="form-group">
+    <%= form.label :text, class: "control-label" %><br/>
+    <%= form.text_area :text, class: "form-control", placeholder: 'Article content', size: '60x10',
+                       'data-parsley-required': true, 'data-parsley-minlength': '5',
+                       'data-parsley-trigger': 'blur'
+    %>
+  </div>
   <%= form.submit 'Submit', class: 'btn btn-primary' %>
+  <script>
+    $("form").parsley()
+  </script>
 <% end %>
