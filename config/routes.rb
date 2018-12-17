@@ -5,5 +5,6 @@ Rails.application.routes.draw do
     resources :comments
   end
 
+  post 'authenticate', to: 'authentication#authenticate'
   root 'welcome#index'
 end
